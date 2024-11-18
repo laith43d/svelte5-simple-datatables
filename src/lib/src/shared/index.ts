@@ -45,8 +45,13 @@ export type Internationalization = {
 
 export type ColumnView = {
     index       : number,
+    key?: string,
     name       ?: string,
     isVisible  ?: boolean,
     isFrozen   ?: boolean,
-    toggle     ?: () => void
+    toggle     ?: () => void,
+    isSortable?: boolean,
+    isFilterable?: boolean,
+    filter?: string,
+    extra?: any,
 }

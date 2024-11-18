@@ -4,7 +4,7 @@
 
     const generate = async (mode) => {
         loading.start('Generating files from AST')
-        const response = await fetch(`http://localhost:3333/document/generate?mode=${mode}`)
+        const response = await fetch(`http://localhost:5173/document/generate?mode=${mode}`)
         await response.json()
         loading.stop()
     }
